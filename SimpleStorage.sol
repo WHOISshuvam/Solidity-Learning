@@ -21,8 +21,8 @@ Person[] public listofPeople; // []
 // Chealsea --- > 81
 mapping(string => uint256) public nameToFavouriteNumber;
 
-function store(uint256 _favouriteNumber) public {
-    myfavouriteNumber = _favouriteNumber;
+function store(uint256 _favouriteNumber) public virtual {
+    myfavouriteNumber = _favouriteNumber; 
 }
 
 //view /pure dont require transaction
